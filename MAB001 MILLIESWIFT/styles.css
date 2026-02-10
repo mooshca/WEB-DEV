@@ -28,11 +28,35 @@ ul.nav-list li a:hover:not(.current) {
   color: #ece7e2;
 }
 
-div.content {
+.page-content {
   margin-left: 25%;
   padding: 1px 16px;
-  height: 1000px;
+  justify-content: center;
+  display: flex;
 }
+
+.profile-text p {
+    margin: 0 0 1.5rem;
+    /* float: right; */
+}
+
+.profile {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 0.25rem solid #4a7766;
+    width: 30%;
+    align-self: center;
+}
+
 
 @media screen and (max-width: 900px) {
   ul.nav-list {
@@ -46,7 +70,21 @@ div.content {
     padding: 15px;
   }
   
-  div.content {margin-left: 0;}
+  .page-content {margin-left: 0;}
+
+  .profile {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  .profile-image {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
