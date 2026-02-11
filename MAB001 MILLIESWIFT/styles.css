@@ -69,13 +69,36 @@ ul.nav-list li a:hover:not(.current) {
     flex: 1;
 }
 
-/*set rules for profile image class*/
+/*set rules for profile-image class*/
 .profile-image {
     border-radius: 50%;
     border: 0.25rem solid #4a7766;
     width: 30%;
     align-self: center;
 }
+
+/*set rules for portfolio-image class*/
+.portfolio-image {
+    width: calc(20% - 0.5rem);
+    padding: 0.5rem;
+}
+
+/*set rules for img element inside portfolio-image class*/
+.portfolio-image img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+/*set rules for portfolio-gallery class*/
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
 
 /*set rules for screens under 900px width*/
 @media screen and (max-width: 900px) {
@@ -104,12 +127,40 @@ ul.nav-list li a:hover:not(.current) {
         text-align: center;
     }
 
-    /*set rules for profile image class*/
+    /*set rules for profile-image class*/
     .profile-image {
         display: block;
         width: 40%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /*set rules for section class*/
+    .section {
+        padding-top: 0.5rem;
+        padding-bottom: 4rem;
+    }
+    
+    /*set rules for portfolio-gallery class*/
+    .portfolio-gallery {
+        float: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0.5rem;
+        padding-left: 1rem;
+    }
+    
+    /*set rules for portfolio-image class*/
+    .portfolio-image {
+        width: calc(33% - 0.5rem);
+        padding: 0.5rem;
+    }
+
+    /*set rules for img elements inside portfolio-image class*/
+    .portfolio-image img {
+        height: 150px;
+        width: 150px;
     }
 
 }
@@ -120,5 +171,12 @@ ul.nav-list li a:hover:not(.current) {
     ul.nav-list li a {
         text-align: center;
         float: none;
+    }
+    
+    /*set rules for img element inside portfolio-image class*/
+    .portfolio-image img {
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
     }
 }
