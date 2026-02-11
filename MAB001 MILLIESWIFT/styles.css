@@ -49,14 +49,30 @@ ul.nav-list li a:hover:not(.current) {
     margin-left: 25%;
     padding: 1px 16px;
     justify-content: center;
-    display: flex;
+    display: block;
 }
 
-.about-page .page-content {
+/*set rules for footer with the class page-content*/
+footer.page-content {
     flex-direction: column;
     align-items: flex-start;
 }
 
+/*set rules for footer*/
+footer {
+    background-color: #4a7766;
+    color: #ece7e2;
+    text-decoration: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*set rules for a elements in footer*/
+footer a{
+    color: #ece7e2;
+}
 
 /*set rules for p inside profile-text class*/
 .profile-text p {
@@ -104,7 +120,6 @@ ul.nav-list li a:hover:not(.current) {
     gap: 0.5rem;
     padding-left: 1rem;
 }
-
 
 /*set rules for screens under 900px width*/
 @media screen and (max-width: 900px) {
